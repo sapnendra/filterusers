@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Users</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="flex items-center flex-col justify-center h-full w-full gap-30 px-10">
+        <input class="search px-5 py-3 rounded-xl outline-none bg-[#111] text-[#888] text-[#fff]" type="text" placeholder="Search...">
+        <div class="card-container flex flex-wrap items-center justify-center gap-10">
+            <div class="card h-80 w-60 bg-gray-200 rounded-2xl overflow-hidden relative">
+                <img class="absolute" src="https://images.unsplash.com/photo-1658766801737-2f1e4e9a51a1?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                <div class="blurred-layer absolute"></div>
+                <div class="content text-center text-[#fff] absolute bottom-2">
+                    <h2 class="text-2xl font-semibold mb-2">Harsh Sharma</h2>
+                    <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, dolorem?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

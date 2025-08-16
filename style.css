@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.blurred-layer {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to bottom, transparent, transparent, rgb(0, 0, 0));
+}
