@@ -1,7 +1,8 @@
 let users = [];
+localStorage.setItem("users", JSON.stringify(users));
 
 const saveToLocalStorage = (obj) => {
-  if(localStorage.getItem("users") === null) {
+  if (localStorage.getItem("users") === null) {
     users = [];
     users.push(obj);
     localStorage.setItem("users", JSON.stringify(users));
@@ -17,7 +18,7 @@ let showUsers = (users) => {
   users = JSON.parse(localStorage.getItem("users"));
   const cardContainer = document.querySelector(".card-container");
   cardContainer.innerHTML = "";
-  
+
   users.forEach((user) => {
     const card = document.createElement("div");
     card.className =
