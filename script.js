@@ -104,6 +104,7 @@ let showUsers = (users) => {
 };
 showUsers(users);
 
+// Add search functionality
 const searchUser = () => {
   // Search functionality
   let search = document.querySelector(".search");
@@ -122,6 +123,7 @@ const searchUser = () => {
 };
 searchUser();
 
+// Add new user functionality
 const createNewUser = () => {
   const createBtn = document.querySelector("#create-card");
   const cardContainer = document.querySelector(".card-container");

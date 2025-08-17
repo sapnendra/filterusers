@@ -18,3 +18,10 @@ body {
     rgb(0, 0, 0)
   );
 }
+
+@media only screen and (max-width: 600px) {
+  .search-create-box {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
