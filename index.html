@@ -3,17 +3,69 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Search Users</title>
+    <title>Search Your Card</title>
     <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body class="p-10">
     <div class="flex items-center flex-col justify-center gap-30 px-10">
-      <input
-        class="search px-5 py-3 rounded-xl outline-none bg-[#111] text-[#888] text-[#fff]"
-        type="text"
-        placeholder="Search..."
-      />
+      <div class="search-create-box w-full flex items-center justify-around">
+        <input
+          class="search px-5 py-3 rounded-xl outline-none bg-[#111] text-[#888] text-[#fff]"
+          type="text"
+          placeholder="Search your card..."
+        />
+        <div class="flex items-center gap-2 font-bold">
+          <span>Create Your Card</span
+          ><button
+            id="create-card"
+            class="px-3 py-0.5 rounded-[50%] outline-none bg-black text-[#fff] text-4xl font-bold cursor-pointer"
+          >
+            +
+          </button>
+        </div>
+      </div>
+
+      <form
+        class="userForm border-2 px-5 py-8 flex flex-col items-center justify-between gap-3 h-100 w-80 rounded-xl hidden"
+      >
+        <div class="flex flex-col gap-1 w-full">
+          <label class="font-semibold px-2" for="image">Upload High Quality Image</label>
+          <input
+            class="border border-gray-300 px-2 py-2 rounded"
+            type="text"
+            name="pic"
+            id="image"
+            placeholder="Paste your image URL here..."
+          />
+        </div>
+        <input
+          class="w-full border border-gray-300 px-2 py-2 rounded"
+          type="text"
+          name="name"
+          placeholder="Enter your name..."
+          />
+          <input
+          class="w-full border border-gray-300 px-2 py-2 rounded"
+          type="text"
+          name="bio"
+          maxlength="50"
+          placeholder="Enter bio..."
+        />
+        <div class="flex flex-col gap-2 w-full">
+          <input
+            class="border border-gray-300 px-5 py-2 rounded bg-blue-500 text-[#fff] font-bold cursor-pointer"
+            type="submit"
+            value="Create Card"
+          />
+          <button
+            class="closeForm border border-gray-300 px-10 py-2 rounded bg-red-600 text-[#fff] font-bold cursor-pointer"
+          >
+            Close
+          </button>
+        </div>
+      </form>
+
       <div
         class="card-container flex flex-wrap items-center justify-center gap-10"
       ></div>
