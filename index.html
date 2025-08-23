@@ -28,33 +28,43 @@
 
       <form
         class="userForm border-2 px-5 py-8 flex flex-col items-center justify-between gap-3 h-100 w-80 rounded-xl hidden"
+        autocomplete="off"
       >
         <div class="flex flex-col gap-1 w-full">
-          <label class="font-semibold px-2" for="image">Upload High Quality Image</label>
+          <label class="font-semibold px-2 text-gray-400" for="image">Upload High Quality Image</label>
           <input
-            class="border border-gray-300 px-2 py-2 rounded"
+            class="border border-gray-300 px-2 py-2 rounded focus:outline-none cursor-pointer"
+            type="file"
+            accept="image/*"
+            id="image"
+          />
+          <h3  class="w-full text-center">OR</h3>
+          <input
+            class="border border-gray-300 px-2 py-2 rounded focus:outline-none cursor-pointer"
             type="text"
             name="pic"
-            id="image"
+            id="pic"
             placeholder="Paste your image URL here..."
           />
         </div>
         <input
-          class="w-full border border-gray-300 px-2 py-2 rounded"
+          class="w-full border border-gray-300 px-2 py-2 rounded focus:outline-none"
           type="text"
           name="name"
           placeholder="Enter your name..."
-          />
-          <input
-          class="w-full border border-gray-300 px-2 py-2 rounded"
+          required
+        />
+        <input
+          class="w-full border border-gray-300 px-2 py-2 rounded focus:outline-none"
           type="text"
           name="bio"
           maxlength="50"
           placeholder="Enter bio..."
+          required
         />
         <div class="flex flex-col gap-2 w-full">
           <input
-            class="border border-gray-300 px-5 py-2 rounded bg-blue-500 text-[#fff] font-bold cursor-pointer"
+            class="border border-gray-300 px-5 py-2 rounded bg-blue-500 text-[#fff] font-bold cursor-pointer focus:outline-none"
             type="submit"
             value="Create Card"
           />
@@ -71,14 +81,19 @@
       ></div>
     </div>
 
-    <footer class="h-40 w-full bg-black text-white text-center flex flex-col items-center justify-center gap-5 p-5">
-      <p>Maintained and Designed by <a class="text-yellow-500 font-bold" href="https://github.com/sapnendra">Sapnendra</a>
-      </p>
+    <footer
+      class="h-40 w-full bg-black text-white text-center flex flex-col items-center justify-center gap-5 p-5"
+    >
       <p>
-        Demonstrate the search functionality and DOM manipulation.
+        Maintained and Designed by
+        <a class="text-yellow-500 font-bold" href="https://github.com/sapnendra"
+          >Sapnendra</a
+        >
       </p>
+      <p>Demonstrate the search functionality and DOM manipulation.</p>
       <p>
-        &copy; 2025 <a href="https://sapnendra.com">sapnendra.com</a>. All rights reserved.
+        &copy; 2025 <a href="https://sapnendra.com">sapnendra.com</a>. All
+        rights reserved.
       </p>
     </footer>
 
