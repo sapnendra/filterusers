@@ -1,4 +1,4 @@
-# Filter Users — Learn Open Source Collaboration with Git & GitHub
+# Filter Users — Learn Open Source Contribution with Git & GitHub
 
 A tiny web app where developers add **their own profile card** to a shared list and learn real-world open-source workflow: fork/clone → branch → edit → commit → push → pull request → review → merge.
 
