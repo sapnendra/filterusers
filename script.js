@@ -156,7 +156,6 @@ const createNewUser = () => {
         bio,
       };
       users.push(newUser);
-      saveToLocalStorage(newUser);
       showUsers(users);
       userForm.reset();
       userForm.classList.add("hidden");
@@ -172,7 +171,6 @@ const createNewUser = () => {
         bio,
       };
       users.push(newUser);
-      saveToLocalStorage(newUser);
       showUsers(users);
       userForm.reset();
       userForm.classList.add("hidden");
