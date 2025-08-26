@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Detailed Guide | Sapnendra</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+      body {
+        font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+        background: #fff;
+        color: #24292f;
+        max-width: 800px;
+        margin: 0px auto 0 auto;
+        padding: 0px 32px 0 32px;
+        box-sizing: border-box;
+        line-height: 1.6;
+      }
+      h2,
+      h3,
+      h4 {
+        font-weight: 600;
+        margin-bottom: 1em;
+        /* border-bottom: 1px solid #eaecef; */
+        padding-bottom: 6px;
+      }
+      h1 {
+        font-size: 2em;
+        font-weight: 600;
+        margin-bottom: 0em;
+        padding-bottom: 0em;
+      }
+      h2 {
+        font-size: 1.5em;
+      }
+      h3 {
+        font-size: 1.25em;
+        border: none;
+      }
+      pre {
+        background: #f6f8fa;
+        padding: 15px;
+        border-radius: 6px;
+        overflow-x: auto;
+        font-size: 0.97em;
+        margin-bottom: 20px;
+        border: 1px solid #d1d5da;
+      }
+      code {
+        background: #f6f8fa;
+        padding: 2px 4px;
+        border-radius: 3px;
+        font-size: 0.97em;
+        font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo,
+          Courier, monospace;
+      }
+      ul,
+      ol {
+        margin: 1em 0 1em 2em;
+      }
+      li {
+        margin-bottom: 0.6em;
+      }
+      blockquote {
+        border-left: 4px solid #dfe2e5;
+        padding: 0.5em 1em;
+        color: #6a737d;
+        background: #f6f8fa;
+        margin: 1em 0;
+      }
+      strong {
+        font-weight: 700;
+      }
+      .checklist {
+        list-style: none;
+        padding-left: 0;
+      }
+      .checklist li {
+        padding-left: 1.9em;
+        text-indent: -1.1em;
+        margin-bottom: 0.7em;
+        position: relative;
+      }
+      .checklist input[type="checkbox"] {
+        position: absolute;
+        left: 0;
+        top: 3px;
+        width: 1em;
+        height: 1em;
+        margin-right: 8px;
+        accent-color: #2ea44f;
+      }
+      hr {
+        border: none;
+        height: 1px;
+        background: #eaecef;
+        margin: 32px 0;
+      }
+      .section {
+        margin-bottom: 32px;
+      }
+      a {
+        color: #0366d6;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="h-20 w-full text-center text-white bg-black flex items-center justify-center mb-10">
+      <h1 class="text-center">Open Source Collaboration Guide</h1>
+    </nav>
+    <h2>🧭 Detailed Guide</h2>
+
+    <h3>1) Fork & Clone</h3>
+    <ul>
+      <li>Click <strong>Fork</strong> on GitHub to create your copy.</li>
+      <li>Clone your fork locally:</li>
+    </ul>
+    <pre><code>git clone https://github.com/&lt;your-username&gt;/filterusers.git
+cd filterusers
+</code></pre>
+
+    <h3>2) Create a Feature Branch</h3>
+    <pre><code>git checkout -b add-&lt;your-username&gt;-card
+</code></pre>
+
+    <blockquote>
+      Branch names are lowercase-with-dashes. One task = one branch.
+    </blockquote>
+
+    <h3>3) Edit the <code>users</code> Array</h3>
+    <ul>
+      <li>
+        Use your editor’s and navigate to script.js file for
+        <code>users = [{}].
+      </li>
+      <li>Open that file. <strong>Do not change existing entries.</strong></li>
+      <li>
+        Copy the <strong>closest existing object and paste as first object</strong> and change just the
+        values (keep the same keys and order used in the file).
+      </li>
+    </ul>
+    <p><strong>Image URL tips</strong></p>
+    <ul>
+      <li>
+        Right-click any public image → <strong>Copy image address</strong>.
+      </li>
+      <li>
+        Test the URL in an incognito window; if it fails/hotlink-blocked, pick a
+        different source.
+      </li>
+    </ul>
+
+    <h3>4) Test Locally</h3>
+    <ul>
+      <li>
+        Open <code>index.html</code> directly, or run with “Live Server” in VS
+        Code.
+      </li>
+      <li>Confirm your card appears and search works with your name.</li>
+    </ul>
+
+    <h3>5) Commit & Push</h3>
+    <pre><code>git add .
+git commit -m "Add &lt;your-name&gt; card"
+git push -u origin add-&lt;your-username&gt;-card
+</code></pre>
+
+    <h3>6) Open a Pull Request</h3>
+    <ul>
+      <li>
+        On GitHub: <strong>Compare & pull request</strong> → base repo:
+        <code>sapnendra/filterusers</code>, base branch: <code>main</code>.
+      </li>
+      <li>
+        Fill details:
+        <ul>
+          <li>
+            <strong>Title:</strong> <code>Add &lt;your-name&gt; card</code>
+          </li>
+          <li>
+            <strong>Description:</strong> What you changed and any notes (image
+            source, tags, etc.).
+          </li>
+        </ul>
+      </li>
+      <li>
+        Submit the PR. If review asks changes, push more commits to the same
+        branch:
+      </li>
+    </ul>
+    <pre><code>git commit -m "Address review: updated image URL"
+git push
+</code></pre>
+
+    <hr />
+
+    <h2>✅ Checklist (Before You Open PR)</h2>
+    <ul class="checklist">
+      <li>
+        My entry matches the
+        <strong>exact keys</strong> used in the file (e.g., <code>img</code> vs
+        <code>image</code>).
+      </li>
+      <li>
+        Image URL loads publicly (try incognito).
+      </li>
+      <li>No stray console errors in DevTools.</li>
+      <li>
+        I’m on a feature branch (not
+        <code>main</code>).
+      </li>
+      <li>Commit message is clear.</li>
+    </ul>
+
+    <hr />
+
+    <h2>🧩 Troubleshooting</h2>
+    <ul>
+      <li>
+        <strong>Git not found:</strong> Install from
+        <a href="https://git-scm.com" target="_blank">https://git-scm.com</a>
+      </li>
+      <li>
+        <strong>Permission denied (push):</strong> You’re pushing to the
+        original repo. Push to your fork (<code>origin</code>) and open a PR to
+        the original.
+      </li>
+      <li>
+        <strong>Merge conflict:</strong> Pull latest <code>main</code>, rebase,
+        fix conflicts:
+        <pre><code>git checkout main
+git pull upstream main   # add the original repo as 'upstream' first
+git checkout add-&lt;your-username&gt;-card
+git rebase main
+# fix conflicts, then:
+git add .
+git rebase --continue
+git push --force-with-lease
+</code></pre>
+      </li>
+      <li>
+        <strong>Image doesn’t show:</strong> Try a different host (some sites
+        block hotlinking). Ensure URL ends with an image extension or returns an
+        image mime-type.
+      </li>
+    </ul>
+
+    <hr />
+
+    <h2>🤝 Contribution Guidelines</h2>
+    <ul>
+      <li>Be kind and respectful. This is a beginner-friendly project.</li>
+      <li>One PR per person for the “add card” task.</li>
+      <li>
+        Keep changes minimal—avoid formatting every file or refactoring
+        unrelated code.
+      </li>
+    </ul>
+
+    <footer class="h-10 w-full text-center text-white bg-black flex items-center justify-center mt-20">
+      <p>&copy; <span class="text-yellow-400">sapnendra.com</span> | All rights reserved.</p>
+    </footer>
+  </body>
+</html>

@@ -15,8 +15,13 @@ body {
     to bottom,
     transparent,
     transparent,
-    rgb(0, 0, 0)
+    rgb(17, 0, 0)
   );
+}
+
+.guide:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 @media only screen and (max-width: 600px) {

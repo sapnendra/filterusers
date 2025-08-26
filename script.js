@@ -1,20 +1,68 @@
-let users = [];
-
-const saveToLocalStorage = (obj) => {
-  if (localStorage.getItem("users") === null) {
-    users = [];
-    users.push(obj);
-    localStorage.setItem("users", JSON.stringify(users));
-  } else {
-    users = JSON.parse(localStorage.getItem("users"));
-    users.push(obj);
-    localStorage.setItem("users", JSON.stringify(users));
+let users = [
+  {
+    name: "Sapnendra Jaiswal",
+    pic: "https://media-bom2-3.cdn.whatsapp.net/v/t61.24694-24/516621092_1315527377128266_955313490469999481_n.jpg?ccb=11-4&oh=01_Q5Aa2QEg0bmIYmJG2HPeEgq67--qfPPKIvf8G5UzhTfDQEu0Zg&oe=68BA54FA&_nc_sid=5e03e0&_nc_cat=103",
+    bio: "Software engineer with a passion for programming and design."
+  },
+  {
+    "name": "Aarav Mehta",
+    "pic": "https://images.unsplash.com/photo-1619241805829-34fb64299391?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "bio": "Full-stack developer who loves solving real-world problems."
+  },
+  {
+    "name": "Sneha Kapoor",
+    "pic": "https://i.pinimg.com/736x/cd/9b/1c/cd9b1cf5b96e8300751f952488d6c002.jpg",
+    "bio": "Creative graphic designer and illustrator with a modern touch."
+  },
+  {
+    "name": "Rohan Verma",
+    "pic": "https://images.unsplash.com/photo-1647346799779-387aef766c36?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "bio": "Data analyst passionate about turning data into insights."
+  },
+  {
+    "name": "Priya Sharma",
+    "pic": "https://i.pinimg.com/736x/1f/2f/85/1f2f856bf3a020ed8ee9ecb3306ae074.jpg",
+    "bio": "Marketing strategist with a knack for storytelling."
+  },
+  {
+    "name": "Vikram Singh",
+    "pic": "https://images.unsplash.com/photo-1657771072153-878f8b0ce74a?q=80&w=765&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "bio": "Product manager focused on building user-centric products."
+  },
+  {
+    "name": "Nisha Patel",
+    "pic": "https://images.unsplash.com/photo-1617729770694-a76a0a296048?q=80&w=693&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "bio": "UX designer passionate about creating seamless experiences."
+  },
+  {
+    "name": "Aditya Rao",
+    "pic": "https://images.unsplash.com/photo-1752486268300-1bb7d6d9867d?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "bio": "Mobile app developer specializing in Android and iOS apps."
+  },
+  {
+    "name": "Kritika Joshi",
+    "pic": "https://images.unsplash.com/photo-1578875249445-3ade45200ac5?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "bio": "Content creator and blogger who loves sharing ideas online."
+  },
+  {
+    "name": "Manish Gupta",
+    "pic": "https://images.unsplash.com/photo-1619241805829-34fb64299391?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "bio": "DevOps engineer with a focus on cloud infrastructure."
+  },
+  {
+    "name": "Pooja Desai",
+    "pic": "https://images.unsplash.com/photo-1662330287468-399c22049d20?q=80&w=721&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "bio": "Frontend developer who loves crafting interactive UIs."
+  },
+  {
+    "name": "Rahul Nair",
+    "pic": "https://images.unsplash.com/photo-1647346799779-387aef766c36?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "bio": "Cybersecurity expert who loves keeping systems safe."
   }
-};
+];
 
 // Display users on page load
 let showUsers = (users) => {
-  users = JSON.parse(localStorage.getItem("users"));
   const cardContainer = document.querySelector(".card-container");
   cardContainer.innerHTML = "";
 
@@ -31,10 +79,10 @@ let showUsers = (users) => {
       blurredLayer.className = "blurred-layer absolute";
 
       const content = document.createElement("div");
-      content.className = "content text-center text-[#fff] absolute bottom-2 w-full";
+      content.className = "content text-center text-[#fff] absolute bottom-2 w-full px-1 py-0";
 
       const name = document.createElement("h2");
-      name.className = "text-2xl font-semibold mb-2";
+      name.className = "text-2xl font-bold mb-2";
       name.textContent = user.name;
 
       const desc = document.createElement("p");
