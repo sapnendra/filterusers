@@ -1,10 +1,5 @@
 let users = [
   {
-    name: "Sapnendra Jaiswal",
-    pic: "https://media-bom2-3.cdn.whatsapp.net/v/t61.24694-24/516621092_1315527377128266_955313490469999481_n.jpg?ccb=11-4&oh=01_Q5Aa2QEg0bmIYmJG2HPeEgq67--qfPPKIvf8G5UzhTfDQEu0Zg&oe=68BA54FA&_nc_sid=5e03e0&_nc_cat=103",
-    bio: "Software engineer with a passion for programming and design."
-  },
-  {
     "name": "Aarav Mehta",
     "pic": "https://images.unsplash.com/photo-1619241805829-34fb64299391?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "bio": "Full-stack developer who loves solving real-world problems."
