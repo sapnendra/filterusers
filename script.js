@@ -1,5 +1,10 @@
 let users = [
   {
+    "name": "Sapnendra Jaiswal",
+    "pic": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "bio": "Full-stack developer who wants to create big impact anywhere."
+  },
+  {
     "name": "Aarav Mehta",
     "pic": "https://images.unsplash.com/photo-1619241805829-34fb64299391?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "bio": "Full-stack developer who loves solving real-world problems."
