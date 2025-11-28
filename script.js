@@ -1,74 +1,79 @@
 let users = [
-   {
-    "name": "Devank Manjhi",
-    "pic": "https://avatars.githubusercontent.com/u/223325483?v=4",
-    "bio": "Your Friendly Neighborhood Devil."
+  {
+    name: "Arpita",
+    pic: "https://avatars.githubusercontent.com/u/235424133?v=4",
+    bio: "Chase your dreams",
   },
   {
-    "name": "Crockery House",
-    "pic": "https://avatars.githubusercontent.com/u/213515906?v=4",
-    "bio": "A modern crockery house to fulfill all your crockery needs."
+    name: "Devank Manjhi",
+    pic: "https://avatars.githubusercontent.com/u/223325483?v=4",
+    bio: "Your Friendly Neighborhood Devil.",
   },
   {
-    "name": "Sapnendra Jaiswal",
-    "pic": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "bio": "Full-stack developer who wants to create big impact anywhere."
+    name: "Crockery House",
+    pic: "https://avatars.githubusercontent.com/u/213515906?v=4",
+    bio: "A modern crockery house to fulfill all your crockery needs.",
   },
   {
-    "name": "Aarav Mehta",
-    "pic": "https://images.unsplash.com/photo-1619241805829-34fb64299391?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "bio": "Full-stack developer who loves solving real-world problems."
+    name: "Sapnendra Jaiswal",
+    pic: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    bio: "Full-stack developer who wants to create big impact anywhere.",
   },
   {
-    "name": "Sneha Kapoor",
-    "pic": "https://i.pinimg.com/736x/cd/9b/1c/cd9b1cf5b96e8300751f952488d6c002.jpg",
-    "bio": "Creative graphic designer and illustrator with a modern touch."
+    name: "Aarav Mehta",
+    pic: "https://images.unsplash.com/photo-1619241805829-34fb64299391?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    bio: "Full-stack developer who loves solving real-world problems.",
   },
   {
-    "name": "Rohan Verma",
-    "pic": "https://images.unsplash.com/photo-1647346799779-387aef766c36?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "bio": "Data analyst passionate about turning data into insights."
+    name: "Sneha Kapoor",
+    pic: "https://i.pinimg.com/736x/cd/9b/1c/cd9b1cf5b96e8300751f952488d6c002.jpg",
+    bio: "Creative graphic designer and illustrator with a modern touch.",
   },
   {
-    "name": "Priya Sharma",
-    "pic": "https://i.pinimg.com/736x/1f/2f/85/1f2f856bf3a020ed8ee9ecb3306ae074.jpg",
-    "bio": "Marketing strategist with a knack for storytelling."
+    name: "Rohan Verma",
+    pic: "https://images.unsplash.com/photo-1647346799779-387aef766c36?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    bio: "Data analyst passionate about turning data into insights.",
   },
   {
-    "name": "Vikram Singh",
-    "pic": "https://images.unsplash.com/photo-1657771072153-878f8b0ce74a?q=80&w=765&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "bio": "Product manager focused on building user-centric products."
+    name: "Priya Sharma",
+    pic: "https://i.pinimg.com/736x/1f/2f/85/1f2f856bf3a020ed8ee9ecb3306ae074.jpg",
+    bio: "Marketing strategist with a knack for storytelling.",
   },
   {
-    "name": "Nisha Patel",
-    "pic": "https://images.unsplash.com/photo-1617729770694-a76a0a296048?q=80&w=693&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "bio": "UX designer passionate about creating seamless experiences."
+    name: "Vikram Singh",
+    pic: "https://images.unsplash.com/photo-1657771072153-878f8b0ce74a?q=80&w=765&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    bio: "Product manager focused on building user-centric products.",
   },
   {
-    "name": "Aditya Rao",
-    "pic": "https://images.unsplash.com/photo-1752486268300-1bb7d6d9867d?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "bio": "Mobile app developer specializing in Android and iOS apps."
+    name: "Nisha Patel",
+    pic: "https://images.unsplash.com/photo-1617729770694-a76a0a296048?q=80&w=693&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    bio: "UX designer passionate about creating seamless experiences.",
   },
   {
-    "name": "Kritika Joshi",
-    "pic": "https://images.unsplash.com/photo-1578875249445-3ade45200ac5?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "bio": "Content creator and blogger who loves sharing ideas online."
+    name: "Aditya Rao",
+    pic: "https://images.unsplash.com/photo-1752486268300-1bb7d6d9867d?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    bio: "Mobile app developer specializing in Android and iOS apps.",
   },
   {
-    "name": "Manish Gupta",
-    "pic": "https://images.unsplash.com/photo-1619241805829-34fb64299391?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "bio": "DevOps engineer with a focus on cloud infrastructure."
+    name: "Kritika Joshi",
+    pic: "https://images.unsplash.com/photo-1578875249445-3ade45200ac5?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    bio: "Content creator and blogger who loves sharing ideas online.",
   },
   {
-    "name": "Pooja Desai",
-    "pic": "https://images.unsplash.com/photo-1662330287468-399c22049d20?q=80&w=721&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "bio": "Frontend developer who loves crafting interactive UIs."
+    name: "Manish Gupta",
+    pic: "https://images.unsplash.com/photo-1619241805829-34fb64299391?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    bio: "DevOps engineer with a focus on cloud infrastructure.",
   },
   {
-    "name": "Rahul Nair",
-    "pic": "https://images.unsplash.com/photo-1647346799779-387aef766c36?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "bio": "Cybersecurity expert who loves keeping systems safe."
-  }
+    name: "Pooja Desai",
+    pic: "https://images.unsplash.com/photo-1662330287468-399c22049d20?q=80&w=721&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    bio: "Frontend developer who loves crafting interactive UIs.",
+  },
+  {
+    name: "Rahul Nair",
+    pic: "https://images.unsplash.com/photo-1647346799779-387aef766c36?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    bio: "Cybersecurity expert who loves keeping systems safe.",
+  },
 ];
 
 // Display users on page load
@@ -89,7 +94,8 @@ let showUsers = (users) => {
       blurredLayer.className = "blurred-layer absolute";
 
       const content = document.createElement("div");
-      content.className = "content text-center text-[#fff] absolute bottom-2 w-full px-1 py-0";
+      content.className =
+        "content text-center text-[#fff] absolute bottom-2 w-full px-1 py-0";
 
       const name = document.createElement("h2");
       name.className = "text-2xl font-bold mb-2";
