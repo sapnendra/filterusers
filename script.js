@@ -1,4 +1,9 @@
 let users = [
+  {
+    "name": "Swaraj",
+    "pic": "https://avatars.githubusercontent.com/u/128459359?v=4",
+    "bio": "MERN-stack | JAVA | If it works I made it.😎|⚽>Sleep. "
+  },
    {
     "name": "Devank Manjhi",
     "pic": "https://avatars.githubusercontent.com/u/223325483?v=4",
