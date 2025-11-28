@@ -1,4 +1,9 @@
 let users = [
+  {
+    "name": "Dipika Bende",
+    "pic": "https://avatars.githubusercontent.com/u/171165971?v=4",
+    "bio": "I am FrontEnd Developer"
+  },
    {
     "name": "Devank Manjhi",
     "pic": "https://avatars.githubusercontent.com/u/223325483?v=4",
