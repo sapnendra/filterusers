@@ -1,5 +1,10 @@
 let users = [
   {
+    "name": "Crockery House",
+    "pic": "https://avatars.githubusercontent.com/u/213515906?v=4",
+    "bio": "A modern crockery store offering a wide range of stylish and durable kitchenware."
+  },
+  {
     "name": "Sapnendra Jaiswal",
     "pic": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "bio": "Full-stack developer who wants to create big impact anywhere."
