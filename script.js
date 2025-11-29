@@ -4,6 +4,11 @@ let users = [
     "pic": "https://avatars.githubusercontent.com/u/128459359?v=4",
     "bio": "MERN-stack | JAVA | If it works I made it.😎|⚽>Sleep. "
   },
+  {
+    "name": "Dipika Bende",
+    "pic": "https://avatars.githubusercontent.com/u/171165971?v=4",
+    "bio": "I am FrontEnd Developer"
+  },
    {
     "name": "Devank Manjhi",
     "pic": "https://avatars.githubusercontent.com/u/223325483?v=4",
