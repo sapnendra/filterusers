@@ -1,5 +1,10 @@
 let users = [
   {
+    name: "Abhishek",
+    pic: "https://avatars.githubusercontent.com/u/192293477?v=4",
+    bio: "A passionate full-stack developer focused on building user-friendly apps",
+  },
+  {
     name: "Arpita",
     pic: "https://avatars.githubusercontent.com/u/235424133?v=4",
     bio: "Chase your dreams",
