@@ -1,4 +1,11 @@
 let users = [
+
+  {
+    name: "Giriraj Kumar",
+    pic: "https://avatars.githubusercontent.com/u/150998984?v=4",
+    bio: "The more you explore the more you learn and the more you learn the more you explore.",
+  },
+
   {
     name: "Abhishek",
     pic: "https://avatars.githubusercontent.com/u/192293477?v=4",
